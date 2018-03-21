@@ -6,7 +6,11 @@ import java.io.Serializable;
  * Created by chen on 2018/3/21.
  */
 public class Book implements Serializable{
-    //private static final long serialVersionUID = 1L;
+
+    //序列版本号，一个唯一标识号，
+    // 若未指定，则会根据该类的名称及实现的接口及公有变量和私有变量的自动生成一个唯一标识号，但若该类中的属性改变，反序列化则会失败
+    //若类内的内容改变后，需要保证原来的内容，能反序列化，同时保证新产生的序列化能被原来的类反序列化，因此带来的许多测试功能
+    private static final long serialVersionUID = 1L;
 
     private String name;
     private int price;
