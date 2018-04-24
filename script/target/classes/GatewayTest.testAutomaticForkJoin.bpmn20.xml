@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">  
+      <process id="AutomaticParalellBasedForkJoin" name="AutomaticParalellBasedForkJoin">
+
+        <startEvent id="startevent7" name="Start"></startEvent>  
+        <parallelGateway id="parallelgateway12" name="Fork"></parallelGateway>  
+        <serviceTask id="servicetask3" name="Task 1" activiti:class="coms.activiti.ServiceTask1"></serviceTask>
+        <serviceTask id="servicetask4" name="Task 2" activiti:class="coms.activiti.ServiceTask2"></serviceTask>
+        <serviceTask id="servicetask5" name="Task 3" activiti:class="coms.activiti.ServiceTask3"></serviceTask>
+        <parallelGateway id="parallelgateway13" name="First Join"></parallelGateway>  
+        <serviceTask id="servicetask6" name="Task 4" activiti:class="coms.activiti.ServiceTask4"></serviceTask>
+        <parallelGateway id="parallelgateway14"></parallelGateway>  
+        <endEvent id="endevent7" name="End"></endEvent>  
+        <sequenceFlow id="flow45" name="" sourceRef="startevent7" targetRef="parallelgateway12"></sequenceFlow>  
+        <sequenceFlow id="flow46" name="" sourceRef="parallelgateway12" targetRef="servicetask3"></sequenceFlow>  
+        <sequenceFlow id="flow47" name="" sourceRef="parallelgateway12" targetRef="servicetask4"></sequenceFlow>  
+        <sequenceFlow id="flow48" name="" sourceRef="parallelgateway12" targetRef="servicetask5"></sequenceFlow>  
+        <sequenceFlow id="flow49" name="" sourceRef="servicetask3" targetRef="parallelgateway13"></sequenceFlow>  
+        <sequenceFlow id="flow50" name="" sourceRef="servicetask4" targetRef="parallelgateway13"></sequenceFlow>  
+        <sequenceFlow id="flow51" name="" sourceRef="servicetask5" targetRef="parallelgateway14"></sequenceFlow>  
+        <sequenceFlow id="flow52" name="" sourceRef="parallelgateway13" targetRef="servicetask6"></sequenceFlow>  
+        <sequenceFlow id="flow53" name="" sourceRef="servicetask6" targetRef="parallelgateway14"></sequenceFlow>  
+        <sequenceFlow id="flow54" name="" sourceRef="parallelgateway14" targetRef="endevent7"></sequenceFlow>
+
+      </process>
+
+
+    </definitions>
+
