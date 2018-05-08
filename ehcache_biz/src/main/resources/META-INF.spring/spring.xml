@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="daoManagement" class="com.yf.af.data.DaoManagementImpl" factory-method="getInstance"></bean>
+
+    <bean id="serverHandler" class="com.yf.af.comm.protocol.ServerHandler">
+        <property name="daoManagement" ref="daoManagement"></property>
+    </bean>
+
+
+</beans>

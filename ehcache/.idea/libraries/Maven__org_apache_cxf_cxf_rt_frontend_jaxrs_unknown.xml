@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.cxf:cxf-rt-frontend-jaxrs:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/unknown/cxf-rt-frontend-jaxrs-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/unknown/cxf-rt-frontend-jaxrs-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/unknown/cxf-rt-frontend-jaxrs-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

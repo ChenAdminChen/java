@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:cxf="http://cxf.apache.org/core"
+       xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:osgix="http://www.springframework.org/schema/osgi-compendium"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/osgi
+            http://www.springframework.org/schema/osgi/spring-osgi.xsd
+            http://www.springframework.org/schema/util
+            http://www.springframework.org/schema/util/spring-util.xsd
+
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd
+            http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+            http://www.springframework.org/schema/osgi-compendium
+            http://www.springframework.org/schema/osgi-compendium/spring-osgi-compendium.xsd
+    ">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.yf.af.ehcahe"/>
+
+
+    <osgi:reference id="daoManagementSvr" interface="com.yf.af.data.DaoManagement"/>
+
+
+    <cxf:bus id="yfafCxfBus">
+        <cxf:properties>
+            <entry key="skip.default.json.provider.registration" value="true"/>
+            <entry key="org.apache.cxf.jaxrs.bus.providers" value-ref="busProviders"/>
+        </cxf:properties>
+        <cxf:features>
+            <cxf:logging/>
+        </cxf:features>
+    </cxf:bus>
+    <util:list id="busProviders">
+        <ref bean="jsonProvider"/>
+    </util:list>
+
+
+    <bean id="jsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+
+    <jaxrs:server address="/">
+        <jaxrs:serviceBeans>
+            <list>
+
+            </list>
+        </jaxrs:serviceBeans>
+
+        <!--cxf cors-->
+        <jaxrs:providers>
+            <bean
+                    class="org.apache.cxf.rs.security.cors.CrossOriginResourceSharingFilter" >
+                <property name="allowOrigins"
+                          value="*">
+                </property>
+            </bean>
+            <!--<bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"></bean>-->
+        </jaxrs:providers>
+    </jaxrs:server>
+
+
+</beans>

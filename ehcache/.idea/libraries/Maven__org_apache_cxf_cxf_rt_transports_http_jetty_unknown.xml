@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.cxf:cxf-rt-transports-http-jetty:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http-jetty/unknown/cxf-rt-transports-http-jetty-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http-jetty/unknown/cxf-rt-transports-http-jetty-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http-jetty/unknown/cxf-rt-transports-http-jetty-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

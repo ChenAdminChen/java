@@ -1,7 +1,5 @@
 package com.chen.guice.guice;
 
-import com.chen.guice.model.HelloWorldPrinter;
-
 public class Hello {
     /**
      * bootstrap:
@@ -12,12 +10,10 @@ public class Hello {
      * @param args
      */
     public static void main(String[] args) {
+
         MyApplet mainApplet = Configuration.getMainApplet();
         mainApplet.run();
 
     }
-
-
-
 
 }

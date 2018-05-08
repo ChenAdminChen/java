@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.codehaus.jackson:jackson-jaxrs:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/unknown/jackson-jaxrs-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/unknown/jackson-jaxrs-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-jaxrs/unknown/jackson-jaxrs-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

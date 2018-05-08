@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.test.ehcache</groupId>
+    <artifactId>ehcache</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>bundle</packaging>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <!-- Replacing default-compile as it is treated specially by maven -->
+                    <execution>
+                        <id>default-compile</id>
+                        <phase>none</phase>
+                    </execution>
+
+                    <!-- Replacing default-testCompile as it is treated specially by maven -->
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>testCompile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            com.yf.af.data;version="[0.0,1)",
+                            com.yf.af.data.model;version="[0.0,1)",
+                            <!--javax.inject,-->
+                            javax.ws.rs;version="[2.0,3)",
+                            javax.ws.rs.core;version="[2.0,3)",
+                            javax.ws.rs.ext;version="[2.0,3)",
+                            javax.xml.bind.annotation,
+                            <!--org.codehaus.jackson.jaxrs,-->
+                            com.fasterxml.jackson.core;version="[2.8,3)",
+                            com.fasterxml.jackson.jaxrs.json;version="[2.8,3)",
+                            com.fasterxml.jackson.annotation;version="[2.8,3)",
+                            com.fasterxml.jackson.jaxrs.base;version="[2.8,3)",
+                            com.fasterxml.jackson.jaxrs.cfg;version="[2.8,3)",
+                            com.fasterxml.jackson.databind;version="[2.8,3)",
+                            org.apache.cxf.bus.spring;version="[3.1,4)",
+                            org.apache.cxf.endpoint;version="[3.1,4)",
+                            org.apache.cxf.jaxrs;version="[3.1,4)",
+                            org.apache.cxf.jaxrs.lifecycle;version="[3.1,4)",
+                            org.aopalliance.aop;version="[1,2)",
+                            org.springframework.aop;version="[3.2,4)",
+                            org.springframework.aop.aspectj;version="[3.2,4)",
+                            org.springframework.aop.framework;version="[3.2,4)",
+                            org.springframework.beans.factory;version="[3.2,4)",
+                            org.springframework.beans.factory.config;version="[3.2,4)",
+                            org.aspectj.lang,
+                            org.aspectj.lang.reflect,
+                            org.aspectj.weaver.reflect,
+                            org.slf4j,
+                            org.apache.cxf.rs.security.cors,
+                            javax.net.ssl,
+                            org.jetbrains.annotations,
+                        </Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- webservice -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http-jetty</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-extension-providers</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.servicemix.bundles</groupId>
+            <artifactId>org.apache.servicemix.bundles.aspectj</artifactId>
+        </dependency>
+
+        <!-- json -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+        </dependency>
+
+
+        <!-- =============================================================== -->
+        <!-- project components -->
+        <!-- =============================================================== -->
+        <dependency>
+            <groupId>com.yf.af</groupId>
+            <artifactId>data</artifactId>
+            <version>0.0.2-SNAPSHOT</version>
+        </dependency>
+
+        <!-- =============================================================== -->
+        <!-- test -->
+        <!-- =============================================================== -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!--log4j-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+        </dependency>
+    </dependencies>
+</project>

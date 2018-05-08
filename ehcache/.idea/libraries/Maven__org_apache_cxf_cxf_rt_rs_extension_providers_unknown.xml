@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.cxf:cxf-rt-rs-extension-providers:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-extension-providers/unknown/cxf-rt-rs-extension-providers-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-extension-providers/unknown/cxf-rt-rs-extension-providers-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-extension-providers/unknown/cxf-rt-rs-extension-providers-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

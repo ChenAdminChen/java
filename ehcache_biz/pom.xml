@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.test.ehcahe</groupId>
+    <artifactId>ehcache_biz</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>bundle</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.aries.blueprint</groupId>
+                <artifactId>blueprint-maven-plugin</artifactId>
+                <!-- <configuration> <scanPaths> <scanPath>com.yf.af.comm</scanPath>
+                    </scanPaths> </configuration> -->
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>
+                            com.yf.af.data;version="[1,2)",
+                            com.yf.af.data.model;version="[1,2)",
+                            <!--javax.inject,-->
+                            <!--javax.ws.rs;version="[2.0,3)",-->
+                            <!--javax.ws.rs.core;version="[2.0,3)",-->
+                            <!--javax.ws.rs.ext;version="[2.0,3)",-->
+                            <!--javax.xml.bind.annotation,-->
+                            <!--org.codehaus.jackson.jaxrs,-->
+
+                            <!--com.fasterxml.jackson.core;version="[2.8,3)",-->
+                            <!--com.fasterxml.jackson.jaxrs.json;version="[2.8,3)",-->
+                            <!--com.fasterxml.jackson.annotation;version="[2.8,3)",-->
+                            <!--com.fasterxml.jackson.jaxrs.base;version="[2.8,3)",-->
+                            <!--com.fasterxml.jackson.jaxrs.cfg;version="[2.8,3)",-->
+                            <!--com.fasterxml.jackson.databind;version="[2.8,3)",-->
+
+                            <!--org.apache.cxf.bus.spring;version="[3.1,4)",-->
+                            <!--org.apache.cxf.endpoint;version="[3.1,4)",-->
+                            <!--org.apache.cxf.jaxrs;version="[3.1,4)",-->
+                            <!--org.apache.cxf.jaxrs.lifecycle;version="[3.1,4)",-->
+                            <!--org.apache.cxf.rs.security.cors,-->
+                            <!--org.aopalliance.aop;version="[1,2)",-->
+                            <!--org.springframework.aop;version="[3.2,4)",-->
+                            <!--org.springframework.aop.aspectj;version="[3.2,4)",-->
+                            <!--org.springframework.aop.framework;version="[3.2,4)",-->
+                            <!--org.springframework.beans.factory;version="[3.2,4)",-->
+                            <!--org.springframework.beans.factory.config;version="[3.2,4)",-->
+                            <!--org.aspectj.lang,-->
+                            <!--org.aspectj.lang.reflect,-->
+                            <!--org.aspectj.weaver.reflect,-->
+                            org.slf4j,
+                            javax.net.ssl,
+                            <!--org.jetbrains.annotations,-->
+                        </Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+
+        <!-- webservice -->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-frontend-jaxrs</artifactId>-->
+            <!--<version>3.1.7</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-transports-http-jetty</artifactId>-->
+            <!--<version>3.1.7</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.cxf</groupId>-->
+            <!--<artifactId>cxf-rt-rs-extension-providers</artifactId>-->
+            <!--<version>3.1.7</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+        <!--<groupId>org.apache.servicemix.bundles</groupId>-->
+        <!--<artifactId>org.apache.servicemix.bundles.aspectj</artifactId>-->
+        <!--<version>>1.8.9_1</version>-->
+    <!--</dependency>-->
+
+        <!-- json -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-jaxrs</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.8.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+            <version>2.8.4</version>
+        </dependency>
+
+
+        <!-- =============================================================== -->
+        <!-- project components -->
+        <!-- =============================================================== -->
+        <dependency>
+            <groupId>com.test.ehcache</groupId>
+            <artifactId>ehcache_data</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--log4j-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.21</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.7</version>
+        </dependency>
+    </dependencies>
+</project>

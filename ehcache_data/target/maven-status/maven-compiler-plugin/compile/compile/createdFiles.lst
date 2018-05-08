@@ -1,0 +1,9 @@
+com\yf\af\data\mapper\UserMapper.class
+com\yf\af\data\DaoManagement.class
+com\yf\af\data\UserService.class
+com\yf\af\data\model\Department.class
+com\yf\af\data\service\UserServiceImpl.class
+com\yf\af\data\model\Company.class
+com\yf\af\data\model\User.class
+com\yf\af\data\DaoManagementImpl.class
+com\yf\af\data\model\OrganizationStructure.class

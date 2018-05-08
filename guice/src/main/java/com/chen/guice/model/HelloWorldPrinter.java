@@ -18,6 +18,7 @@ public class HelloWorldPrinter implements MyApplet{
         //println 怎么样输出
         //hello world 输出的内容
 
+        //System.out.println("fff");
          printStream.write(stringProvider.get());
     }
 
