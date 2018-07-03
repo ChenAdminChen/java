@@ -4,13 +4,16 @@ import org.apache.activemq.command.ActiveMQTopic;
 
 import javax.jms.*;
 
+/**
+ * 测试JMS订阅topic后，接收消息
+ */
 public class JMSConsumers  implements MessageListener {
     public static void main(String[] args) throws JMSException {
         ConnectionFactory connectionfactory =null;
         Connection connection=null;
         Session session=null;
         if(connectionfactory==null){
-            connectionfactory = new ActiveMQConnectionFactory("hnyfadmin","hnyfadmin","tcp://localhost:61616");
+            connectionfactory = new ActiveMQConnectionFactory("admin","admin","tcp://localhost:61616");
             //接收对象时，设置这个为true
 //            ((ActiveMQConnectionFactory) connectionfactory).setTrustAllPackages(true);
         }

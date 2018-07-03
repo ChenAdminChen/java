@@ -8,6 +8,9 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * JMS连接成功后，订阅topic "user.onlines" ,处理消息
+ */
 public class JMSConsumer  implements MessageListener{
 
     private JMSConnectionInfo jmsConnectionInfo;
@@ -19,6 +22,9 @@ public class JMSConsumer  implements MessageListener{
 
     }
 
+    /**
+     * JMS连接成功后，订阅topic "user.onlines"
+     */
     public void consumer(){
 
         Connection connection = jmsConnectionInfo.getConnection();
@@ -39,7 +45,7 @@ public class JMSConsumer  implements MessageListener{
     }
 
     /**
-     * 接收消息
+     * 接收消息,并进行处理
      * @param message
      */
     public void onMessage(Message message) {
@@ -81,6 +87,9 @@ public class JMSConsumer  implements MessageListener{
         }
     }
 
+    /**
+     * 发送信息
+     */
     public void sendSet(){
 
         Set<String> stringSet = new HashSet<String>();

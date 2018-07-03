@@ -6,9 +6,12 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 连接jMS 发送消息
+ */
 public class JMSProducer {
     public static void main(String[] args) throws JMSException {
-        ConnectionFactory connectionfactory = new ActiveMQConnectionFactory("hnyfadmin", "hnyfadmin", "tcp://192.168.1.168:61616");
+        ConnectionFactory connectionfactory = new ActiveMQConnectionFactory("admin", "admin", "tcp://localhost:61616");
 
         //创建与JMS服务的连接:ConnectionFactory被管理的对象，由客户端创建，用来创建一个连接对象
         Connection connection = connectionfactory.createConnection();

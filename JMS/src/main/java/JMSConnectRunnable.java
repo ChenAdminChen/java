@@ -3,6 +3,9 @@ import javax.jms.ExceptionListener;
 import javax.jms.JMSException;
 import javax.jms.Session;
 
+/**
+ * 连接activemq
+ */
 public class JMSConnectRunnable implements Runnable, ExceptionListener {
 
     private JMSConnectionInfo jmsConnectionInfo = JMSConnectionInfo.getInstance();
@@ -13,7 +16,6 @@ public class JMSConnectRunnable implements Runnable, ExceptionListener {
         currentThread = Thread.currentThread();
 
         while (true) {
-
 
             System.out.println(jmsConnectionInfo.getAtomicBoolean().get());
 
@@ -64,6 +66,7 @@ public class JMSConnectRunnable implements Runnable, ExceptionListener {
 
     }
 
+    //监听错误信息,并释放Thread
     public void onException(JMSException e) {
         // if(e.toString().contains("The Session is closed")){
 

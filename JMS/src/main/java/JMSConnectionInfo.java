@@ -7,6 +7,9 @@ import javax.jms.Connection;
 import javax.jms.Session;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+/**
+ * JMS连接的信息保存处理，单例模式
+ */
 //@Data
 public
 class JMSConnectionInfo {
@@ -53,7 +56,7 @@ class JMSConnectionInfo {
     }
 
     private JMSConnectionInfo(){
-        this.activeMQConnectionFactory =  new ActiveMQConnectionFactory("hnyfadmin", "hnyfadmin", "tcp://localhost:61616");
+        this.activeMQConnectionFactory =  new ActiveMQConnectionFactory("admin", "admin", "tcp://localhost:61616");
 
     }
 

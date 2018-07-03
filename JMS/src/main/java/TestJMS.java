@@ -6,7 +6,7 @@ import javax.jms.*;
 
 public class TestJMS {
     public static void main(String[] args) {
-        ConnectionFactory connectionfactory = new ActiveMQConnectionFactory("hnyfadmin", "hnyfadmin", "tcp://localhost:61616");
+        ConnectionFactory connectionfactory = new ActiveMQConnectionFactory("admin", "admin", "tcp://localhost:61616");
 
         Connection connection  = null;
         try {
