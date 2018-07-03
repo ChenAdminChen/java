@@ -1,0 +1,6 @@
+package com.chen.springboot.dao;
+
+public class StudentRepository  {
+
+
+}
