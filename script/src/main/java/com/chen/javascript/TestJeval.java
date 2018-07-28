@@ -2,7 +2,6 @@ package com.chen.javascript;
 
 import net.sourceforge.jeval.EvaluationException;
 import net.sourceforge.jeval.Evaluator;
-import org.apache.ibatis.annotations.Param;
 import org.junit.Test;
 
 import java.util.regex.Matcher;
@@ -29,15 +28,12 @@ public class TestJeval {
             evaluator.putVariable("x","7");
             boolean value=  evaluator.getBooleanResult(formatExpression(str));
 
-
-
             System.out.println(value);
 
         } catch (EvaluationException e) {
             e.printStackTrace();
         }
 
-     //  formatExpression(str2);
     }
 
     public static String formatExpression(String exp){

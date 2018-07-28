@@ -7,6 +7,7 @@ import org.junit.Test;
 
 /**
  * Created by chen on 2017/7/7.
+ * 自定义状态机
  */
 public class StateTest {
     State state;
