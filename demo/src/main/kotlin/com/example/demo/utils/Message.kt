@@ -1,4 +1,4 @@
-package utils
+package com.example.demo.utils
 
 /**
  * Created by liufeng on 2018/7/25
