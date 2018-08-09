@@ -6,12 +6,6 @@ package com.example.demo.utils
  */
 object CacheData {
 
-    //静态
-    object Factory {
-       val Cache_Name = "cache name"
-    }
-
-
     var status: Boolean? = null
 
     var list: MutableList<String>? = null
