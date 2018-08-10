@@ -10,6 +10,8 @@ spring:
   application:
     name: service-zuul
 
+## retryable :true 用于处理当某个实例出错时，可将其转发到另一台服务器上处理，
+## retryable :false 多个实例，其中有一个实例出错后，负载均衡处理时分配时，还是会访问出错的
 zuul:
   retryable: true
   routes:

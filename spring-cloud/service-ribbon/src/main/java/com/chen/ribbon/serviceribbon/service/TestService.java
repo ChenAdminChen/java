@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * 用于访问（service-hi 来源于注册的名字）的服务
+ */
 @Service
 public class TestService {
 

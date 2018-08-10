@@ -1,6 +1,7 @@
 server:
   port: 8761
 
+  #eureke配置，主要用于所面的client注册
 eureka:
   instance:
     hostname: localhost
