@@ -12,11 +12,14 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 当实例出错，并没有加入spring retry模块，错误处理会到该类来处理
+ */
 @Component
 public class ServiceFallbackProvider implements FallbackProvider {
     @Override
     public String getRoute() {
-        return "*";
+        return "*";  //该 * 代表所有注册过的服务名
     }
 
     @Override

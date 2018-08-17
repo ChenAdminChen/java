@@ -1,0 +1,45 @@
+logging:
+  level:
+    root: DEBUG
+
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:thekeystore
+    key-alias: chen
+    key-store-password: changeit
+    key-password: changeit
+
+
+#CAS服务地址
+cas:
+  server:
+    host:
+#      url: https://192.168.4.203:8443/cas
+#      url: https://localhost:8443/cas
+      url: https://cas.example.org:8443/cas
+      #CAS服务登录地址
+      login_url: ${cas.server.host.url}/login
+      #CAS服务登出地址
+      logout_url: ${cas.server.host.url}/logout?service=${app.server.host.url}
+#应用访问地址
+app:
+  server:
+    host:
+#      url: http://192.168.4.203:8080
+      url: https://192.168.4.203:8080
+      proxy_callback_url: https://cas.example.org:8080/login/cas/proxyreceptor
+
+  #应用登录地址
+  login:
+    url: /login/cas
+
+  #应用登出地址
+  logout:
+    url: /logout
+
+
+#https://127.0.0.1/cas/serviceValidate?ticket=ST-3-aKagvnTw0NRdlDj1WrKMX7-GZeochen-T4&service=https://localhost:8080/login/cas&pgtUrl=https://127.0.0.1:8443/pgtCallback
+
+
+#  keytool -import -alias thekeystore -storepass changeit -file /etc/cas/cas.cer -keystore "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/cacerts"

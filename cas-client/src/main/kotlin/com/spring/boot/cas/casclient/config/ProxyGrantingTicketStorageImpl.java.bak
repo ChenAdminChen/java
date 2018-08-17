@@ -1,0 +1,22 @@
+package com.spring.boot.cas.casclient.config;
+
+import org.jasig.cas.client.proxy.ProxyGrantingTicketStorage;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ProxyGrantingTicketStorageImpl implements ProxyGrantingTicketStorage {
+    @Override
+    public void save(String proxyGrantingTicketIou, String proxyGrantingTicket) {
+
+    }
+
+    @Override
+    public String retrieve(String proxyGrantingTicketIou) {
+        return null;
+    }
+
+    @Override
+    public void cleanUp() {
+
+    }
+}
