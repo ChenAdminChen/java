@@ -1,0 +1,32 @@
+#logging:
+#  level:
+#    root: DEBUG
+
+#CAS服务地址
+cas:
+  server:
+    host:
+      url: https://dev.yifenganxin.com:9443/cas
+      #CAS服务登录地址
+      login_url: ${cas.server.host.url}/login
+      #CAS服务登出地址
+      logout_url: ${cas.server.host.url}/logout?service=${app.server.host.url}
+
+
+#应用访问地址,cas回调路径
+app:
+  server:
+    host:
+      url: http://cas.example.org:8082
+
+  #应用登录地址
+  login:
+    url: /login/cas
+
+  #应用登出地址
+  logout:
+    url: /logout
+
+server:
+  port: 8082
+#  keytool -import -alias thekeystore -storepass changeit -file /etc/cas/cas.cer -keystore "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/cacerts"
