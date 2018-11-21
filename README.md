@@ -9,12 +9,8 @@
 
 ## flutter_demo_1
 
-## ehcache
-
-## ehcache_data
-
-## ehcache_biz
-
+## ehcache， ehcache_data，ehcache_biz
+  自定义echache
 ## java-demo
 
 ## script
@@ -33,4 +29,8 @@
 
 ## ssodemo
 
-## jpa_muplital_key
+## jpa_muplital_key 
+  jpa查询复合主键
+  
+## cas-oauth2
+  用spring-security+ cas(oauth2)实现用户身份认证
