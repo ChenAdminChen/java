@@ -1,0 +1,40 @@
+zuul:
+#  sensitive-headers: Cookie,Set-Cookie
+  retryable: true
+  routes:
+    api-a:
+#      path: /api-a/**
+      sensitiveHeaders: Cookie,Set-Cookie
+      url: http://127.0.0.1:8081
+    api-b:
+      url: http://127.0.0.1:8082
+      sensitiveHeaders: Cookie,Set-Cookie
+  add-proxy-headers: true
+
+server:
+  port: 8083
+
+security:
+  user:
+    password: user  # 直接登录时的密码
+  ignored: /
+  sessions: never   # session策略
+  oauth2:
+#    sso:
+#      loginPath: /login   # 登录路径
+#    client:
+#      #      clientId: 89c4bd2d8aaf1a0046bb
+#      #      clientSecret: 1c3656d02db003b6e4e6e65bc884566634b8e5dc
+#      #      accessTokenUri: https://github.com/login/oauth/access_token
+#      #      userAuthorizationUri: https://github.com/login/oauth/authorize
+#      #      clientAuthenticationScheme: form
+#      clientId: clientid
+#      clientSecret: clientSecret
+#      accessTokenUri:  https://127.0.0.1:8443/cas/oauth2.0/accessToken
+#      userAuthorizationUri: https://127.0.0.1:8443/cas/oauth2.0/authorize
+#      clientAuthenticationScheme: form
+
+    resource:
+      #      userInfoUri: https://api.github.com/user
+      userInfoUri: https://127.0.0.1:8443/cas/oauth2.0/profile
+#      preferTokenInfo: false

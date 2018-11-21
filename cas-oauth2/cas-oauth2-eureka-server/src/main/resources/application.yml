@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+  #eureke配置，主要用于所面的client注册
+eureka:
+  instance:
+    hostname: localhost
+  #    leaseRenewalIntervalInSeconds: 30
+  client:
+    registerWithEureka: false  #为true,将该服务注册到服务管理中心
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false   #true开启自我保护模式
+
+spring:
+  application:
+    name: eureka-server

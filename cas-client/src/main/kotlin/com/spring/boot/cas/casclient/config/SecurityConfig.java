@@ -78,6 +78,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .anyRequest().authenticated()//其余的所有请求都需要验证
 //                .permitAll()
                 .and()
+
                 .logout()
                 .permitAll()//定义logout不需要验证
                 .and()

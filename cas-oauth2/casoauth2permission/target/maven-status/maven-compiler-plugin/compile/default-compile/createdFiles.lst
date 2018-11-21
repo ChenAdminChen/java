@@ -1,0 +1,10 @@
+com/cas/oauth2/permission/PermissionAnnotationProcessor$Module.class
+com/cas/oauth2/permission/anno/Service.class
+com/cas/oauth2/permission/anno/PermissionDependency.class
+com/cas/oauth2/permission/anno/PreAuthorize.class
+com/cas/oauth2/permission/anno/PermissionModule.class
+com/cas/oauth2/permission/PermissionAnnotationProcessor$Authority.class
+com/cas/oauth2/permission/PermissionAnnotationProcessor$Method.class
+com/cas/oauth2/permission/anno/PermissionRequest.class
+com/cas/oauth2/permission/anno/PermissionRequest$Permission.class
+com/cas/oauth2/permission/PermissionAnnotationProcessor.class

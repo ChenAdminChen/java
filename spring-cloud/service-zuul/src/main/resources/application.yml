@@ -22,7 +22,7 @@ zuul:
       path: /api-b/**
       serviceId: service-feign
     api-c:
-#      path: /api-c/**
+      #      path: /api-c/**
       serviceId: service-hi
 
 #ribbon:

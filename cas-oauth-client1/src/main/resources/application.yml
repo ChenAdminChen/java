@@ -1,0 +1,30 @@
+
+server:
+  port: 8081
+
+security:
+#  user:
+#    password: user  # 直接登录时的密码
+#  ignored: /
+#  sessions: never   # session策略
+  oauth2:
+##    sso:
+##      loginPath: /login   # 登录路径
+    client:
+      clientId: clientid
+      clientSecret: clientSecret
+##      accessTokenUri:  https://127.0.0.1:8083/cas/oauth2.0/accessToken
+##      userAuthorizationUri: https://127.0.0.1:8443/cas/oauth2.0/authorize
+#      clientAuthenticationScheme: form
+      accessTokenUri: http://127.0.0.1:8083/oauth/token
+      userAuthorizationUri: http://127.0.0.1:8083/oauth/authorize
+##      scope:
+
+#    resource:
+#      #      userInfoUri: https://api.github.com/user
+#      userInfoUri: https://127.0.0.1:8083/oauth/profile
+
+#logging:
+#  level:
+#    root: debug
+#      preferTokenInfo: false

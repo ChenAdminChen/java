@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d603dbf-4a4f-47a8-be06-dc6f3ceb0f34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Layout.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/assets/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/assets/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/SecondScreen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/arabic.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/main_1.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/main_2.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flutter_demo_1/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo_1/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flutter_demo_1/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo_1/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flutter_demo_1/lib/main_1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/main_1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flutter_demo_1/lib/page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_demo_1/lib/page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../spring-boot-security-cas" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-boot-security-cas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/eurake-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/eurake-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/service-eurake/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/service-eurake/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,18 +24,20 @@
     <session id="-1995939736">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dart" value="10" />
+          <entry key="gitignore" value="1" />
           <entry key="gradle" value="2" />
           <entry key="properties" value="2" />
           <entry key="txt" value="1" />
@@ -50,6 +47,7 @@
         <counts>
           <entry key="Dart" value="10" />
           <entry key="Groovy" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -57,6 +55,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dart" value="6962" />
+          <entry key="gitignore" value="1" />
           <entry key="gradle" value="7" />
           <entry key="properties" value="1" />
           <entry key="txt" value="3" />
@@ -66,6 +65,7 @@
         <counts>
           <entry key="Dart" value="6962" />
           <entry key="Groovy" value="7" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
           <entry key="Scratch" value="3" />
         </counts>
@@ -74,14 +74,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="2898">
               <caret line="139" column="54" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="54" />
               <folding>
                 <element signature="e#24#71#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -108,6 +117,7 @@
       <find>blue</find>
       <find>true</find>
       <find>showOverlay</find>
+      <find>Do F</find>
     </findStrings>
   </component>
   <component name="FlutterView" splitter-proportion="0.82365143" />
@@ -139,6 +149,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/lib/Layout.dart" />
         <option value="$PROJECT_DIR$/lib/main.dart" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -148,11 +159,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="328" />
-    <option name="y" value="141" />
-    <option name="width" value="1240" />
-    <option name="height" value="746" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="332" />
+    <option name="y" value="115" />
+    <option name="width" value="1230" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -161,8 +172,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,22 +179,19 @@
               <item name="feature_discovery" type="b2602c69:ProjectViewProjectNode" />
               <item name="feature_discovery" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="feature_discovery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="feature_discovery" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="LatestVitalSignsMapper&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535099481687" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535100997223" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
@@ -243,12 +249,14 @@
       <workItem from="1534921698698" duration="2410000" />
       <workItem from="1534984039575" duration="8211000" />
       <workItem from="1534996055865" duration="11912000" />
-      <workItem from="1535070801694" duration="16192000" />
+      <workItem from="1535070801694" duration="16445000" />
+      <workItem from="1535101040362" duration="125000" />
+      <workItem from="1535333598646" duration="736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46982000" />
+    <option name="totallyTimeSpent" value="48096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -260,9 +268,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1608" height="868" extended-state="7" />
+    <frame x="332" y="115" width="1230" height="745" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.40966386" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21932773" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -274,7 +282,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.6438172" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6438172" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.0" />
@@ -284,7 +292,7 @@
       <window_info anchor="bottom" id="Logcat" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.3392" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -419,20 +427,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1439">
           <caret line="114" column="23" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!block;n#AnchoredOverlay#0" />
-            <element signature="n#!!block;n#CenterAbout#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="2898">
           <caret line="139" column="54" selection-start-line="139" selection-start-column="54" selection-end-line="139" selection-end-column="54" />
           <folding>
             <element signature="e#24#71#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

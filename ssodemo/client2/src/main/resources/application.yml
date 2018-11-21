@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /client2
+security:
+  oauth2:
+    client:
+      clientId: clientId
+      clientSecret: clientSecret
+      accessTokenUri: http://localhost:8081/oauth/token  #请求令牌地址
+      userAuthorizationUri: http://localhost:8081/oauth/authorize  #请求认证地址
+    resource:
+      user-info-uri: http://localhost:8081/oauth/profile
+#      jwt:
+#        key-uri: http://localhost:8081/oauth/token_key  #解析jwt令牌所需密钥的地址
+spring:
+  thymeleaf:
+    cache: false

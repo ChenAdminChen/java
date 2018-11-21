@@ -31,7 +31,6 @@ public class CustomUserDetailsService
         //实现AuthenticationUserDetailsService，实现loadUserDetails方法
 //     AuthenticationUserDetailsService<CasAssertionAuthenticationToken>
 	implements AuthenticationUserDetailsService<CasAssertionAuthenticationToken>
-
     {
 
             @Override

@@ -1,0 +1,4 @@
+javac -J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 -classpath /home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/target/cas-oauth2-permission-1.0-SNAPSHOT.jar UserInfoService.java
+
+-classpath 后面接类中所依赖的jar
+

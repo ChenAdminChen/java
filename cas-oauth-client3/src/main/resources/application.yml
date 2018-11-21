@@ -1,0 +1,27 @@
+server:
+  port: 8083
+
+security:
+#  user:
+#    password: user  # 直接登录时的密码
+#  ignored: /
+#  sessions: never   # session策略
+  oauth2:
+    sso:
+      loginPath: /login   # 登录路径
+    client:
+      clientId: clientid
+      clientSecret: clientSecret
+#      accessTokenUri:  https://127.0.0.1:8443/cas/oauth2.0/accessToken
+#      userAuthorizationUri: https://127.0.0.1:8443/cas/oauth2.0/authorize
+      clientAuthenticationScheme: form
+#      scope:
+
+#    resource:
+#      #      userInfoUri: https://api.github.com/user
+#      userInfoUri: https://127.0.0.1:8443/cas/oauth2.0/profile
+#      preferTokenInfo: false
+
+
+#  https://127.0.0.1:8443/cas/oauth2.0/authorize?response_type=code&client_id=clientid&redirect_uri=http://www.baidu.com
+# https://127.0.0.1:8443/cas/oauth2.0/accessToken?grant_type=authorization_code&client_id=clientid&client_secret=clientSecret&code=OC-1-jz1oIxIWk3k0oYHS8HmQ9Ma2JCPzq0Dt&redirect_uri=http://www.baidu.com
