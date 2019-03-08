@@ -38,9 +38,7 @@ class TestController {
     @GetMapping("/get-client2")
     fun getOauth(p:Principal): String {
 
-
         val result = oauth2RestTemplate!!.getForObject("http://127.0.0.1:9999/api-b/get-a", String::class.java)
-
 
         return result.toString() + " test"
     }
@@ -49,7 +47,6 @@ class TestController {
     fun getOauthFeign(): String {
 
         val result = testService!!.sayHiFromClientOne()
-
 
         return result.toString() + " oauth feign"
     }

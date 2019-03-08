@@ -10,7 +10,7 @@ eureka:
     registerWithEureka: false  #为true,将该服务注册到服务管理中心
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:8088/eureka/
   server:
     enable-self-preservation: false   #true开启自我保护模式
 

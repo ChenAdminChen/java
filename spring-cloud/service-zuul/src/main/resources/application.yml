@@ -6,6 +6,7 @@ eureka:
 server:
   port: 8769
 
+
 spring:
   application:
     name: service-zuul

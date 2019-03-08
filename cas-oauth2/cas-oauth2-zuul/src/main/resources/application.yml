@@ -1,6 +1,7 @@
 server:
   port: 9999
 
+
 zuul:
   #  sensitive-headers: Cookie,Set-Cookie
 #  retryable: true
@@ -9,6 +10,7 @@ zuul:
       #      path: /api-a/**
       sensitiveHeaders:
       url: http://127.0.0.1:9091
+#     serviceId
 #      customSensitiveHeaders: true
     api-b:
       url: http://127.0.0.1:9092

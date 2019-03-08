@@ -1,7 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61e96e96-80b5-4c13-8f8e-79edc21f2c8b" name="Default Changelist" comment="" />
+    <list default="true" id="61e96e96-80b5-4c13-8f8e-79edc21f2c8b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java-demo/src/main/java/com/chen/controller/MyThreadTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/kotlin/com/example/testkotlin/ConfigurationUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/kotlin/com/example/testkotlin/config/Person.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/kotlin/com/example/testkotlin/config/Person1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application-por.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/person1.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-client1/src/main/kotlin/com/cas/oauth2/casoauth2client1/controller/TestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-client1/src/main/kotlin/com/cas/oauth2/casoauth2client1/controller/TestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/controller/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/controller/BookTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/controller/IOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/controller/IOTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/module/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/module/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/module/BookType.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/module/BookType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/module/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/../java-demo/target/classes/com/chen/module/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/explain.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/explain.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/src/test/kotlin/com/example/testkotlin/TestKotlinApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/test/kotlin/com/example/testkotlin/TestKotlinApplicationTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-boot-security-cas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/service-eurake/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/service-eurake/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud/service-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/service-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/main/java/com/sso/client1/Client1Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/test/java/com/sso/client1/Client1ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/main/java/com/sso/client2/Client2Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/test/java/com/sso/client2/Client2ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/ServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/SsoAuthorizationServerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/SsoSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/SsoUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/test/java/com/sso/server/ServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/ssodemo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssodemo/target/sso-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -34,11 +96,11 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="378">
               <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
             </state>
           </provider>
@@ -56,8 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/demo/rxjava/TransformingObservable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            <state relative-caret-position="21">
+              <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,13 +130,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/demo/module/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="105">
               <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,64 +151,20 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-51" />
-    <option name="y" value="72" />
-    <option name="width" value="1390" />
-    <option name="height" value="1028" />
+    <option name="x" value="825" />
+    <option name="y" value="178" />
+    <option name="width" value="1010" />
+    <option name="height" value="537" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="rxjava2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rxjava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="rxjava2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rxjava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rxjava2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rxjava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="rxjava2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rxjava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rxjava2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rxjava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rxjava2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rxjava2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="rxjava" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,28 +198,23 @@
       <option name="presentableId" value="Default" />
       <updated>1552029629038</updated>
       <workItem from="1552029632297" duration="303000" />
+      <workItem from="1552029977025" duration="1016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303000" />
+    <option name="totallyTimeSpent" value="1319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1050" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.38469827" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -206,38 +222,35 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Gradle" weight="0.32995737" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3297414" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.89644015" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Gradle" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/module/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/DemoApplicationTests.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="378">
           <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/DemoApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/demo/rxjava/FilteringObservable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -246,10 +259,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/demo/module/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/demo/rxjava/TransformingObservable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        <state relative-caret-position="21">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
