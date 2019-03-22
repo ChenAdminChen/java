@@ -2,77 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10af2a54-f02b-4b96-a4ac-1175bb23a4c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chen/controller/MyThreadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/kotlin/com/example/testkotlin/ConfigurationUtil.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/kotlin/com/example/testkotlin/config/Person.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/kotlin/com/example/testkotlin/config/Person1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application-por.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/person1.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-client1/src/main/kotlin/com/cas/oauth2/casoauth2client1/controller/TestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-client1/src/main/kotlin/com/cas/oauth2/casoauth2client1/controller/TestController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../cas-oauth2/cas-oauth2-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/src/main/kotlin/com/cas/oauth/casoauthzuul/CasOauthZuulApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cas-oauth-zuul/src/test/kotlin/com/cas/oauth/casoauthzuul/CasOauthZuulApplicationTests.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chen/controller/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chen/controller/BookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chen/controller/IOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chen/controller/IOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chen/module/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chen/module/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chen/module/BookType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chen/module/BookType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chen/module/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chen/module/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/explain.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/explain.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpa_multiple_key/src/test/kotlin/com/example/testkotlin/TestKotlinApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../jpa_multiple_key/src/test/kotlin/com/example/testkotlin/TestKotlinApplicationTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rxjava2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../rxjava2/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rxjava2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rxjava2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-boot-security-cas" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/service-eurake/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/service-eurake/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spring-cloud/service-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-cloud/service-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/main/java/com/sso/client1/Client1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client1/src/test/java/com/sso/client1/Client1ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/main/java/com/sso/client2/Client2Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/client2/src/test/java/com/sso/client2/Client2ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/ServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/SsoAuthorizationServerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/SsoSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/java/com/sso/server/SsoUserDetailsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/server/src/test/java/com/sso/server/ServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/ssodemo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssodemo/target/sso-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -150,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chen/controller/MyThreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="189">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -292,7 +224,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552031100558" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552031648493" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -471,15 +403,16 @@
       <option name="presentableId" value="Default" />
       <updated>1521599295603</updated>
       <workItem from="1551063985800" duration="2190000" />
-      <workItem from="1552030898102" duration="259000" />
+      <workItem from="1552030898102" duration="698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2449000" />
+    <option name="totallyTimeSpent" value="2888000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -613,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chen/controller/MyThreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>

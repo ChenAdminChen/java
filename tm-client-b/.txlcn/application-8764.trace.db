@@ -1,0 +1,6 @@
+2019-03-22 13:25:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TXC_UNDO_LOG" not found; SQL statement:
+SELECT * FROM TXC_UNDO_LOG WHERE GROUP_ID = ? and UNIT_ID = ? [42102-197]
+2019-03-22 13:25:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TXC_UNDO_LOG" not found; SQL statement:
+DELETE FROM TXC_UNDO_LOG WHERE GROUP_ID=? AND UNIT_ID=? [42102-197]

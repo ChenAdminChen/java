@@ -1,0 +1,226 @@
+//plugins {
+//    id 'org.springframework.boot' version '2.0.4.RELEASE'
+//    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+//    id 'org.jetbrains.kotlin.plugin.spring' version '1.3.21'
+//}
+//
+//apply plugin: 'io.spring.dependency-management'
+//
+//group = 'com.chen.clientB'
+//version = '0.0.1-SNAPSHOT'
+//sourceCompatibility = '1.8'
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//ext {
+//    set('springCloudVersion', 'Finchley.SR1')
+//}
+//
+//dependencies {
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+//
+//    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+//    compile('mysql:mysql-connector-java')
+//
+//    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
+//    implementation 'org.jetbrains.kotlin:kotlin-reflect'
+//    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+//
+//    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+//
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//
+//    compile('org.springframework.cloud:spring-cloud-starter-security')
+//    compile('org.springframework.cloud:spring-cloud-starter-oauth2')
+//
+//    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+//    compile('io.jmnarloch:feign-oauth2-spring-cloud-starter:1.0.0')
+//}
+//
+//dependencyManagement {
+//    imports {
+//        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+//    }
+//}
+//
+//compileKotlin {
+//    kotlinOptions {
+//        freeCompilerArgs = ['-Xjsr305=strict']
+//        jvmTarget = '1.8'
+//    }
+//}
+//
+//compileTestKotlin {
+//    kotlinOptions {
+//        freeCompilerArgs = ['-Xjsr305=strict']
+//        jvmTarget = '1.8'
+//    }
+//}
+
+//plugins {
+//    id 'org.springframework.boot' version '2.0.5.RELEASE'
+//    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+//    id 'org.jetbrains.kotlin.plugin.spring' version '1.3.21'
+//}
+//
+//apply plugin: 'io.spring.dependency-management'
+//
+//group = 'com.chen.clientA'
+//version = '0.0.1-SNAPSHOT'
+//sourceCompatibility = '1.8'
+//
+//repositories {
+////    mavenCentral()
+////    mavenCentral()
+//    jcenter()
+//}
+//
+//ext {
+//    set('springCloudVersion', 'Finchley.SR1')
+//}
+//
+//dependencies {
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+//
+//    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+//    compile('mysql:mysql-connector-java')
+//
+//    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
+//    implementation 'org.jetbrains.kotlin:kotlin-reflect'
+//    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+//
+//    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.0'
+//    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+//
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//
+//    compile('org.springframework.cloud:spring-cloud-starter-security')
+//    compile('org.springframework.cloud:spring-cloud-starter-oauth2')
+//
+//    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+//    compile('io.jmnarloch:feign-oauth2-spring-cloud-starter:1.0.0')
+//
+//}
+//
+//dependencyManagement {
+//    imports {
+//        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+//    }
+//}
+//
+//compileKotlin {
+//    kotlinOptions {
+//        freeCompilerArgs = ['-Xjsr305=strict']
+//        jvmTarget = '1.8'
+//    }
+//}
+//
+//compileTestKotlin {
+//    kotlinOptions {
+//        freeCompilerArgs = ['-Xjsr305=strict']
+//        jvmTarget = '1.8'
+//    }
+//}
+
+
+buildscript {
+    ext {
+        kotlinVersion = '1.2.61'
+        springBootVersion = '2.0.5.RELEASE'
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-noarg:${kotlinVersion}")
+
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-spring'
+apply plugin: 'kotlin-jpa'
+
+apply plugin: 'java'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.chen.clientB'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+compileKotlin {
+    kotlinOptions {
+        freeCompilerArgs = ["-Xjsr305=strict"]
+        jvmTarget = "1.8"
+    }
+}
+compileTestKotlin {
+    kotlinOptions {
+        freeCompilerArgs = ["-Xjsr305=strict"]
+        jvmTarget = "1.8"
+    }
+}
+
+repositories {
+    mavenCentral()
+//    jcenter()
+    maven {
+        url "http://192.168.1.168:8081/nexus/content/repositories/snapshots"
+    }
+
+}
+
+dependencies {
+
+    compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+
+
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('mysql:mysql-connector-java')
+
+    compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile('com.fasterxml.jackson.module:jackson-module-kotlin')
+    compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    compile("org.jetbrains.kotlin:kotlin-reflect")
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    //oauth2
+//    compile('org.springframework.cloud:spring-cloud-starter-security')
+//    compile('org.springframework.cloud:spring-cloud-starter-oauth2')
+
+    //feign
+    compile('org.springframework.cloud:spring-cloud-starter-openfeign')
+
+//    compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix')
+//    compile('org.springframework.boot:spring-boot-starter-actuator')
+
+//    compile('io.jmnarloch:feign-oauth2-spring-cloud-starter:1.0.0')
+
+    compile 'com.codingapi.txlcn:txlcn-tc:5.0.2.RELEASE'
+//    compile 'com.codingapi.txlcn:txlcn-tm:5.0.2.RELEASE'
+    compile 'com.codingapi.txlcn:txlcn-txmsg-netty:5.0.2.RELEASE'
+
+}
+
+ext {
+    springCloudVersion = 'Finchley.SR1'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}

@@ -24,37 +24,37 @@ public class TransformingObservable {
                 });
     }
 
-    @Test
-    public void testGroupBy() {
-        Student student1 = new Student("chen1", 21, 1);
-        Student student2 = new Student("chen2", 20, 1);
-        Student student3 = new Student("chen3", 21, 0);
-        Student student4 = new Student("chen4", 20, 0);
-        Student student5 = new Student("chen5", 20, 3);
-        Student student6 = new Student("chen6", 21, 0);
-
-        List<Student> list = new ArrayList<>();
-        list.add(student1);
-        list.add(student2);
-        list.add(student3);
-        list.add(student4);
-        list.add(student5);
-        list.add(student6);
-
-        Observable.fromIterable(list)
-                .groupBy(r -> r.getSex())
-                .flatMap(g -> g.toList().toObservable())
-                .subscribe(r -> {
-                    for (Student student : r) {
-                        System.out.println(student.toString());
-                    }
-                });
-//                .flatMap(Observable::toList)
+//    @Test
+//    public void testGroupBy() {
+//        Student student1 = new Student("chen1", 21, 1);
+//        Student student2 = new Student("chen2", 20, 1);
+//        Student student3 = new Student("chen3", 21, 0);
+//        Student student4 = new Student("chen4", 20, 0);
+//        Student student5 = new Student("chen5", 20, 3);
+//        Student student6 = new Student("chen6", 21, 0);
+//
+//        List<Student> list = new ArrayList<>();
+//        list.add(student1);
+//        list.add(student2);
+//        list.add(student3);
+//        list.add(student4);
+//        list.add(student5);
+//        list.add(student6);
+//
+//        Observable.fromIterable(list)
+//                .groupBy(x -> x.getAge())
+//                .flatMap(g -> g.toList().toObservable())
 //                .subscribe(r -> {
-//                    System.out.println(r);
+//                    for (Student student : r) {
+//                        System.out.println(student.toString());
+//                    }
 //                });
-
-    }
+////                .flatMap(Observable::toList)
+////                .subscribe(r -> {
+////                    System.out.println(r);
+////                });
+//
+//    }
 
     /**
      * 1,2,3,4,5 -> 1,3(3 = 1+ 2),6(6 = 3 + 3),10(10 = 6+4) 15(15=10+5)

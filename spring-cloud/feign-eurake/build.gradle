@@ -52,6 +52,7 @@
 //        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 //    }
 //}
+
 buildscript {
     ext {
         springBootVersion = '2.0.4.RELEASE'
