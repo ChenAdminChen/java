@@ -49,10 +49,10 @@ public class TransformingObservable {
 //                        System.out.println(student.toString());
 //                    }
 //                });
-////                .flatMap(Observable::toList)
-////                .subscribe(r -> {
-////                    System.out.println(r);
-////                });
+//                .flatMap(Observable::toList)
+//                .subscribe(r -> {
+//                    System.out.println(r);
+//                });
 //
 //    }
 
