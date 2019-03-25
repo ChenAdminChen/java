@@ -1,6 +1,0 @@
-/home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/src/main/java/com/cas/oauth2/permission/anno/PermissionDependency.java
-/home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/src/main/java/com/cas/oauth2/permission/anno/PermissionModule.java
-/home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/src/main/java/com/cas/oauth2/permission/anno/Service.java
-/home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/src/main/java/com/cas/oauth2/permission/PermissionAnnotationProcessor.java
-/home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/src/main/java/com/cas/oauth2/permission/anno/PermissionRequest.java
-/home/chen/work/bolg_code/java/cas-oauth2/casoauth2permission/src/main/java/com/cas/oauth2/permission/anno/PreAuthorize.java

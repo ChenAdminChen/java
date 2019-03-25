@@ -1,4 +1,0 @@
-#Fri Aug 24 16:26:38 CST 2018
-base.0=/home/chen/work/bolg_code/java/feature_discovery/build/app/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex
