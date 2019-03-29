@@ -9,15 +9,10 @@ import org.springframework.cloud.openfeign.EnableFeignClients
 import org.springframework.context.support.AbstractApplicationContext
 
 @SpringBootApplication
-//@EnableDiscoveryClient
-
 //@EnableResourceServer
-
 @EnableFeignClients
-
-@EnableDistributedTransaction
-
 @EnableEurekaClient
+@EnableDistributedTransaction
 class TmClientAApplication{
 //
 //    @Bean
@@ -29,6 +24,7 @@ class TmClientAApplication{
 //
 //    }
 }
+
 
 fun main(args: Array<String>) {
     runApplication<TmClientAApplication>(*args)

@@ -1,0 +1,12 @@
+package com.chen.clientb.module
+
+import javax.persistence.Column
+import javax.persistence.Entity
+
+@Entity(name = "teacher_info")
+class TeacherInfoJpa {
+    @Column(name = "t_id")
+    var tId: Int? = 0
+
+    var info: String? = null
+}

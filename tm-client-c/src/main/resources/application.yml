@@ -1,0 +1,46 @@
+# 注册中心的地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#开启feign自带的断熔处理
+#feign:
+#  hystrix:
+#    enabled: flase
+#  oauth2:
+#    enabled: true
+
+server:
+  port: 8765
+
+spring:
+  application:
+    name: tm-client-c
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/txlcn-demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: as1996
+    driver-class-name: com.mysql.jdbc.Driver
+
+  jpa:
+    show-sql: true
+
+#security:
+#  oauth2:
+#    client:
+#      clientId: clientid
+#      clientSecret: clientSecret
+#      scope: read,write
+#      auto-approve-scopes: '.*'
+#    resource:
+#      userInfoUri: https://dev.yifenganxin.com:9443/cas/oauth2.0/profile
+
+logging:
+  level:
+    root: warn
+
+tx-lcn:
+  client:
+    manager-address: 192.168.4.17:9999

@@ -6,8 +6,8 @@ eureka:
 
 #开启feign自带的断熔处理
 feign:
-  hystrix:
-    enabled: true
+#  hystrix:
+#    enabled: true
   client:
     config:
       default:
@@ -18,9 +18,9 @@ feign:
 #    enabled: true
 
 #Ribbon的负载均衡策略
-ribbon:
-  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-  MaxAutoRetriesNextServer: 0
+#ribbon:
+#  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#  MaxAutoRetriesNextServer: 0
 
 
 server:
@@ -48,11 +48,11 @@ spring:
 #    resource:
 #      userInfoUri: https://dev.yifenganxin.com:9443/cas/oauth2.0/profile
 
-tm-client-url: http://localhost:8764
-
+tm-client-a-url: http://localhost:8764
+tm-client-c-url: http://localhost:8765
 logging:
   level:
-    root: DEBUG
+    root: warn
 
 tx-lcn:
   client:

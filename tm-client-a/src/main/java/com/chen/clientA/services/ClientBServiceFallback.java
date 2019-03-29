@@ -14,7 +14,22 @@ public class ClientBServiceFallback implements ClientBService {
     @Override
     public String createClientB(Integer id) {
         DTXUserControls.rollbackGroup(TracingContext.tracing().groupId());
-        return "fallback";
+        return null;
+    }
+
+    @Override
+    public String createClientBThrowError(Integer id) {
+        return null;
+    }
+
+    @Override
+    public String createClientBTransactionError(Integer id) {
+        return null;
+    }
+
+    @Override
+    public String updateClientBTransactionError(Integer id) {
+        return null;
     }
 
 }

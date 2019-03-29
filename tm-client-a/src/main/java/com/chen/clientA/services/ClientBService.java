@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.websocket.server.PathParam;
 
-@FeignClient(value = "tm-client-b",url = "${tm-client-url}",fallback = ClientBServiceFallback.class)
+//,fallback = ClientBServiceFallback.class
+
+@FeignClient(value = "tm-client-b",url = "${tm-client-a-url}")
 public interface ClientBService {
 
     @RequestMapping(value = "/client-b-success", method = RequestMethod.GET, consumes = "application/json")
@@ -16,5 +18,16 @@ public interface ClientBService {
 
     @RequestMapping(value = "/", method = RequestMethod.POST, consumes = "application/json")
     String createClientB(@RequestParam("id") Integer id);
+
+    @RequestMapping(value = "/client-b-throw-error", method = RequestMethod.POST, consumes = "application/json")
+    String createClientBThrowError(@RequestParam("id") Integer id);
+
+
+    @RequestMapping(value = "/client-b-transaction-error", method = RequestMethod.POST, consumes = "application/json")
+    String createClientBTransactionError(@RequestParam("id") Integer id);
+
+
+    @RequestMapping(value = "/client-b-transaction-error/{id}", method = RequestMethod.PUT, consumes = "application/json")
+    String updateClientBTransactionError(@PathVariable("id") Integer id);
 
 }

@@ -14,6 +14,9 @@ eureka:
 server:
   port: 8764
 
+#txlcn-demo
+
+#&&autoReconnect=true&allowMultiQueries=true
 spring:
   application:
     name: tm-client-b
@@ -24,6 +27,12 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
+
+
+#mybatis:
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    use-generated-keys: true
 #
 #security:
 #  oauth2:
@@ -37,7 +46,7 @@ spring:
 
 logging:
   level:
-    root: DEBUG
+    root: warn
 
 tx-lcn:
   client:

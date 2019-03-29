@@ -1,0 +1,12 @@
+package com.chen.clientc.mapper;
+
+import com.chen.clientc.module.TeacherInfo;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface TeacherInfoMapper {
+    @Insert("insert into teacher_info(t_id,info) values(#{tId},#{info})")
+//    @Options(useGeneratedKeys = true,  keyProperty = "id")
+    int add(TeacherInfo teacherInfo);
+}
