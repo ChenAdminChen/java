@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "8ce5bb36-305d-4ce8-a1d0-22e2b7c9fe10",
+		"name": "tm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8763",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8763/client-a-throw-exception",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763/client-a-throw-exception",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"client-a-throw-exception"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8763/client-a-transaction-error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763/client-a-transaction-error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"client-a-transaction-error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8763/client-a-success-client-b-throw-error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763/client-a-success-client-b-throw-error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"client-a-success-client-b-throw-error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8763/client-a-success-client-b-transaction-error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763/client-a-success-client-b-transaction-error",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"client-a-success-client-b-transaction-error"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8763/client-a-error-client-b-success",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763/client-a-error-client-b-success",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"client-a-error-client-b-success"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8763/no-lcn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8763/no-lcn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8763",
+					"path": [
+						"no-lcn"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
