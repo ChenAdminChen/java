@@ -37,3 +37,15 @@
 
 ## rxjava2
   学习rxjava
+
+## tm学习
+### eureka-service
+  用于服务的注册
+### tm-service
+  事务控制中心
+### tm-client-a
+  带分布式的事务，mybatis作为持久层,a服务中使用fegin访问b服务及c服务
+### tm-client-b
+   带分布式的事务，mybatis作为持久层
+### tm-client-c
+  带分布式的事务，使用了jpa作为持久层
