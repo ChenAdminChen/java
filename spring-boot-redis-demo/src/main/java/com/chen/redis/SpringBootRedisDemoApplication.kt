@@ -22,15 +22,15 @@ class SpringBootRedisDemoApplication {
     @Autowired
     private val template: StringRedisTemplate? = null
 
-    @Throws(Exception::class)
-    fun run(vararg args: String) {
-        val ops = this.template!!.opsForValue()
-        val key = "spring.boot.redis.test"
-        if (!this.template.hasKey(key)) {
-            ops.set(key, "foo")
-        }
-        println("Found key " + key + ", value=" + ops.get(key))
-    }
+//    @Throws(Exception::class)
+//    fun run(vararg args: String) {
+//        val ops = this.template!!.opsForValue()
+//        val key = "spring.boot.redis.test"
+//        if (!this.template.hasKey(key)) {
+//            ops.set(key, "foo")
+//        }
+//        println("Found key " + key + ", value=" + ops.get(key))
+//    }
 
 //    @Bean
 //    fun commandLineRunner(applicationContext: AbstractApplicationContext): CommandLineRunner {
@@ -40,17 +40,17 @@ class SpringBootRedisDemoApplication {
 //    }
 //
 
-    @Bean
-    fun init(ctx: ApplicationContext) = CommandLineRunner {
-//        val beanNames = ctx.getBeanDefinitionNames()
-//        Arrays.sort(beanNames)
-//        for (beanName in beanNames) {
-//            println(beanName)
-//        }
-
-        val map = ctx.getBeansOfType(CacheManager::class.java)
-
-    }
+//    @Bean
+//    fun init(ctx: ApplicationContext) = CommandLineRunner {
+////        val beanNames = ctx.getBeanDefinitionNames()
+////        Arrays.sort(beanNames)
+////        for (beanName in beanNames) {
+////            println(beanName)
+////        }
+//
+//        val map = ctx.getBeansOfType(CacheManager::class.java)
+//
+//    }
 }
 
 fun main(args: Array<String>) {

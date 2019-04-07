@@ -7,7 +7,7 @@ class Teacher:Serializable {
 
 //    @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Int? = 0
+    var id: Integer? = null
 
     var name: String? = null
 
