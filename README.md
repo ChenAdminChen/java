@@ -49,3 +49,9 @@
    带分布式的事务，mybatis作为持久层
 ### tm-client-c
   带分布式的事务，使用了jpa作为持久层
+  
+## spring-boot-redis-demo
+  1. redis is cache-servier at database layer
+  
+## lock-demo
+  learn thread
