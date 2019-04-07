@@ -19,9 +19,9 @@ spring:
     name: tm-client-c
 
   datasource:
-    url: jdbc:mysql://localhost:3306/txlcn-demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: as1996
+    url: jdbc:mysql://192.168.4.17:3306/txlcn-demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: liu
+    password: admin
     driver-class-name: com.mysql.jdbc.Driver
 
   jpa:
@@ -39,8 +39,8 @@ spring:
 
 logging:
   level:
-    root: warn
+    root: debug
 
 tx-lcn:
   client:
-    manager-address: 192.168.4.17:9999
+    manager-address: 192.168.4.52:9996

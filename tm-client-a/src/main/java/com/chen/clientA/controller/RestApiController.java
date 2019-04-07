@@ -5,6 +5,8 @@ import com.chen.clientA.module.Teacher;
 import com.chen.clientA.services.ClientBService;
 import com.chen.clientA.services.ClientCService;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import com.codingapi.txlcn.tc.annotation.TccTransaction;
+import com.codingapi.txlcn.tc.annotation.TxcTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -43,7 +45,7 @@ public class RestApiController {
 
         System.out.println("client a :" + teacher.getId());
 
-        clientBService.createClientB(teacher.getId());
+//        clientBService.createClientB(teacher.getId());
 
 
         throw new RuntimeException("test");
