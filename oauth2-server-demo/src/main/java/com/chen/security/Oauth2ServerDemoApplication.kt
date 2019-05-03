@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
 //@EnableAuthorizationServer
-@MapperScan(basePackages = arrayOf("com.chen.security.dao"))
+@MapperScan(basePackages = ["com.chen.security.dao"])
 class Oauth2ServerDemoApplication
 
 
