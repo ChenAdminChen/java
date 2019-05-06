@@ -57,5 +57,5 @@
   learn thread
   
 ## spring-boot-swagger
-  learn spring-boot use swaggera
+  learn spring-boot use swagger
   2019.5.3 perfect
