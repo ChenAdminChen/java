@@ -1,0 +1,11 @@
+package com.chen.annotation.annotationdemo
+
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
+
+@SpringBootApplication
+class AnnotationDemoApplication
+
+fun main(args: Array<String>) {
+    runApplication<AnnotationDemoApplication>(*args)
+}
