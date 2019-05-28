@@ -4,7 +4,9 @@ import org.junit.Test;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ReadJava {
     @Test
@@ -17,9 +19,9 @@ public class ReadJava {
 
 
     @Test
-    public void stringTest(){
+    public void stringTest() {
         String str = "fffdddee,";
-        System.out.println(str.substring(0,str.length()-1));
+        System.out.println(str.substring(0, str.length() - 1));
     }
 
     @Test
@@ -29,52 +31,104 @@ public class ReadJava {
         Parent parent1 = new Parent("user", "company");
         Parent parent2 = new Parent("company", "specialist");
         Parent parent3 = new Parent("department", "company");
-        Parent parent4 = new Parent("specialist", "");
+        Parent parent4 = new Parent("specialist", null);
+        Parent parent5 = new Parent("sub-specialist", "specialist");
+        Parent parent6 = new Parent("label", null);
+        Parent parent7 = new Parent("sub-label", "label");
+        Parent parent8 = new Parent("device", "sub-label");
+        Parent parent9 = new Parent("chanel", "");
+        Parent parent10 = new Parent("sub-chanel", "chanel");
+        Parent parent11 = new Parent("sub-department", "department");
+        Parent parent12 = new Parent("sub-company", "company");
+        Parent parent13 = new Parent("task-defined", "department");
+        Parent parent14 = new Parent("role", "department");
+        Parent parent15 = new Parent("sub-role", "role");
+        Parent parent16 = new Parent("user-role", "sub-role");
+        Parent parent17 = new Parent("sub-user-role", "user-role");
+        Parent parent18 = new Parent("sub-sub-company", "sub-company");
+        Parent parent19 = new Parent("sub-sub-label", "sub-label");
+        Parent parent20 = new Parent("specialist-1", "");
+        Parent parent21 = new Parent("specialist-2", "");
+        Parent parent22 = new Parent("specialist-3", "");
+        Parent parent23 = new Parent("label-1", null);
+        Parent parent24 = new Parent("label-2", "");
 
         parents.add(parent1);
         parents.add(parent2);
         parents.add(parent3);
         parents.add(parent4);
+        parents.add(parent5);
+        parents.add(parent6);
+        parents.add(parent7);
+        parents.add(parent8);
+        parents.add(parent9);
+        parents.add(parent10);
+        parents.add(parent11);
+        parents.add(parent12);
+        parents.add(parent13);
+        parents.add(parent14);
+        parents.add(parent15);
+        parents.add(parent16);
+        parents.add(parent17);
+        parents.add(parent18);
+        parents.add(parent19);
+        parents.add(parent20);
+        parents.add(parent21);
+        parents.add(parent22);
+        parents.add(parent23);
+        parents.add(parent24);
 
-        List<Parent> list = new ArrayList<>();
+        Date start = new Date();
 
-        for (int i = 0; i < parents.size(); i++) {
+        fixFindParent(parents);
+        Date end = new Date();
 
-            list.add(findParent(parents, parents.get(i)));
-        }
+        System.out.println(end.getTime() - start.getTime());
 
-        list.stream().forEach(r -> System.out.println(r.toString()));
+        parents.forEach(r -> {
+            System.out.println(r.toString());
+        });
+
     }
 
+    public void fixFindParent(List<Parent> parentList) {
+        List<Parent> parentNull = parentList.stream()
+                .filter(r -> r.getParent() == null || r.getParent().equals(""))
+                .collect(Collectors.toList());
 
-    //find parent
-    public Parent findParent(List<Parent> parents, Parent parent) {
 
-        if (parent.getParent() == null || parent.getParent().equals("")) {
-            System.out.println(parents.toString());
-            return parent;
+        List<Parent> parents = parentList.stream()
+                .filter(r -> r.getParent() != null && !r.getParent().equals(""))
+                .collect(Collectors.toList());
+
+        for (int j = 0; j < parents.size(); j++) {
+            for (int i = 0; i < parentNull.size(); i++) {
+
+                Parent p = parents.get(j);
+
+                Parent c = parentNull.get(i);
+
+                if (p.getParent() == c.getName()) {
+                    if (c.getValue() == null)
+                        c.setValue(c.getName());
+
+                    p.setValue(c.getValue() + "." + p.getName());
+
+                    p.setParent(null);
+                    break;
+                }
+            }
         }
 
-        parents.stream()
-                .filter(r -> r.getName() == parent.getParent())
-                .forEach(r -> {
-                    if (parent.getParent() != null && !parent.getParent().equals("") && !parent.getParent().equals("null")) {
-                        if (parent.getValue() != null) {
-                            parent.setValue(r.getName() + "." + parent.getValue());
-                        } else {
+        parents = parentList.stream().filter(r -> r.getParent() != null && !r.getParent().equals("")).collect(Collectors.toList());
 
-                            parent.setValue(r.getName() + "." + parent.getName());
-                        }
-                        parent.setParent(r.getParent());
-                    } else {
-                        parent.setParent(null);
-                    }
+        if (parents.size() > 0)
+            fixFindParent(parentList);
+        else
+            return;
 
-                });
 
-        return findParent(parents, parent);
     }
-
 
     public static void readFileByLines(String fileName) {
         File file = new File(fileName);

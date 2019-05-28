@@ -1,0 +1,76 @@
+package com.chen.annotation
+
+import java.util.ArrayList
+
+data class Dependency(var name: String, var action: String) {
+
+}
+
+
+class Module {
+    var name: String? = null
+    var parent: String? = null
+    var id: String? = null
+
+    var dependencies: List<Dependency> = ArrayList()
+
+    constructor(name: String, parent: String, id: String, dependencies: List<Dependency>) {
+        this.name = name
+        this.parent = parent
+        this.id = id
+        this.dependencies = dependencies
+    }
+
+    constructor() {}
+}
+
+/**
+ * @value: storage [...parent].child
+ * @parent: name's parent
+ * @name : this is module name
+ */
+class Parent {
+    var parent: String? = null
+    var name: String? = null
+
+    var value: String? = null
+
+    constructor() {}
+
+    constructor(name: String, parent: String) {
+        this.parent = parent
+        this.name = name
+    }
+
+    constructor(name: String, parent: String, value: String) {
+        this.parent = parent
+        this.name = name
+        this.value = value
+    }
+}
+
+
+/**
+ * @readPath: need update java this.path
+ * @writePath: write java file to  this.path
+ * @read: permission read information
+ * @write: permission write information
+ * @dependency: permission dependency
+ */
+internal class Information {
+    var readPath: String? = null
+    var writePath: String? = null
+    var read: String? = null
+    var write: String? = null
+    var dependency: String? = null
+
+    constructor(readPath: String, writePath: String, read: String, write: String, dependency: String) {
+        this.readPath = readPath
+        this.writePath = writePath
+        this.read = read
+        this.write = write
+        this.dependency = dependency
+    }
+
+    constructor() {}
+}
