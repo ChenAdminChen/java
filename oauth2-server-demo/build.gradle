@@ -17,20 +17,6 @@ repositories {
     mavenCentral()
 }
 
-//compileKotlin {
-//    kotlinOptions {
-//        freeCompilerArgs = ["-Xjsr305=strict"]
-//        jvmTarget = "1.8"
-//    }
-//}
-//compileTestKotlin {
-//    kotlinOptions {
-//        freeCompilerArgs = ["-Xjsr305=strict"]
-//        jvmTarget = "1.8"
-//    }
-//}
-
-
 dependencies {
 
     compile 'org.springframework.boot:spring-boot-starter-web'

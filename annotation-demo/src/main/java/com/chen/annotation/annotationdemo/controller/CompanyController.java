@@ -14,6 +14,7 @@ import java.util.List;
 })
 public class CompanyController {
     @PermissionRequest(PermissionRequest.Permission.Read)
+    //company.read
     public List<Company> getCompanys() {
       return null;
     }
@@ -24,7 +25,10 @@ public class CompanyController {
     }
 
     @PermissionRequest(PermissionRequest.Permission.Update)
+    //company.write
     public Company updateCompanyById() {
         return new Company(1, "company1", "test");
     }
+
+    //
 }

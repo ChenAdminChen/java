@@ -59,3 +59,9 @@
 ## spring-boot-swagger
   learn spring-boot use swagger  
   2019.5.3 perfect
+## permission-annotation 
+## annotation-demo
+    1. permission-annotation java自定义注解
+    2. annotation-demo 注解使用方
+   这两个模块主要将annotation-demo中原有的自定义注解，改成新的注解，其注解中的内容不变
+    

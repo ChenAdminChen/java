@@ -1,0 +1,14 @@
+#java -cp ../lib/hsqldb.jar org.hsqldb.server.Server --database.0 file.testdb --dbname.0 testdb
+spring:
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:hsql://localhost/testdb
+    username: SA
+    password:
+    initialization-mode: always
+    platform: hsqldb
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+
