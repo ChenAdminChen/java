@@ -17,9 +17,9 @@ public class ReadJava {
 
 
     @Test
-    public void stringTest(){
+    public void stringTest() {
         String str = "fffdddee,";
-        System.out.println(str.substring(0,str.length()-1));
+        System.out.println(str.substring(0, str.length() - 1));
     }
 
     @Test
@@ -213,7 +213,8 @@ class Parent {
 
     private String value;
 
-    public Parent() {
+    public Parent(String name) {
+        this.name = name;
     }
 
     public Parent(String name, String parent) {
