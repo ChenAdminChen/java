@@ -91,11 +91,30 @@ public class ReadJava {
 
     }
 
+    public void fixFind(List<Parent> parentList, Parent parent) {
+        List<Parent> parents = parentList.stream()
+                .filter(r -> r.getParent() != null && !r.getParent().equals(""))
+                .filter(r -> r.getParent().equals(parent.getName()))
+                .collect(Collectors.toList());
+
+        if (parents != null && parents.size() > 0) {
+            if (parent.getValue() == null)
+                parent.setValue(parent.getName());
+
+            parents.forEach(j -> {
+
+                j.setValue(parent.getValue() + "." + j.getName());
+                fixFind(parentList, j);
+            });
+        }
+
+    }
+
+
     public void fixFindParent(List<Parent> parentList) {
         List<Parent> parentNull = parentList.stream()
                 .filter(r -> r.getParent() == null || r.getParent().equals(""))
                 .collect(Collectors.toList());
-
 
         List<Parent> parents = parentList.stream()
                 .filter(r -> r.getParent() != null && !r.getParent().equals(""))
@@ -113,6 +132,7 @@ public class ReadJava {
                         c.setValue(c.getName());
 
                     p.setValue(c.getValue() + "." + p.getName());
+
 
                     p.setParent(null);
                     break;
@@ -267,7 +287,10 @@ class Parent {
 
     private String value;
 
-    public Parent() {
+    private Parent child;
+
+    public Parent(String name) {
+        this.name = name;
     }
 
     public Parent(String name, String parent) {
@@ -303,6 +326,14 @@ class Parent {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    public Parent getChild() {
+        return child;
+    }
+
+    public void setChild(Parent child) {
+        this.child = child;
     }
 
     @Override
