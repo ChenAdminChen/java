@@ -1,14 +1,10 @@
 package com.example.testkotlin.entity
 
-import org.hibernate.annotations.CacheConcurrencyStrategy
-import java.io.Serializable
 import javax.persistence.*
 
 @Entity
 @Table(name = "grade")
-@Cacheable
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-class Grade: Serializable {
+class Grade {
 
     @EmbeddedId
     @GeneratedValue(strategy = GenerationType.IDENTITY)

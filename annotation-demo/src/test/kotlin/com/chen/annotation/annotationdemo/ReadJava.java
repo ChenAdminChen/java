@@ -27,56 +27,56 @@ public class ReadJava {
     @Test
     public void findParentTest() {
         List<Parent> parents = new ArrayList<>();
+//
+//        Parent parent1 = new Parent("user", "company");
+//        Parent parent2 = new Parent("company", "specialist");
+//        Parent parent3 = new Parent("department", "company");
+//        Parent parent4 = new Parent("specialist", null);
+//        Parent parent5 = new Parent("sub-specialist", "specialist");
+//        Parent parent6 = new Parent("label", null);
+//        Parent parent7 = new Parent("sub-label", "label");
+//        Parent parent8 = new Parent("device", "sub-label");
+//        Parent parent9 = new Parent("chanel", "");
+//        Parent parent10 = new Parent("sub-chanel", "chanel");
+//        Parent parent11 = new Parent("sub-department", "department");
+//        Parent parent12 = new Parent("sub-company", "company");
+//        Parent parent13 = new Parent("task-defined", "department");
+//        Parent parent14 = new Parent("role", "department");
+//        Parent parent15 = new Parent("sub-role", "role");
+//        Parent parent16 = new Parent("user-role", "sub-role");
+//        Parent parent17 = new Parent("sub-user-role", "user-role");
+//        Parent parent18 = new Parent("sub-sub-company", "sub-company");
+//        Parent parent19 = new Parent("sub-sub-label", "sub-label");
+//        Parent parent20 = new Parent("specialist-1", "");
+//        Parent parent21 = new Parent("specialist-2", "");
+//        Parent parent22 = new Parent("specialist-3", "");
+//        Parent parent23 = new Parent("label-1", null);
+//        Parent parent24 = new Parent("label-2", "");
 
-        Parent parent1 = new Parent("user", "company");
-        Parent parent2 = new Parent("company", "specialist");
-        Parent parent3 = new Parent("department", "company");
-        Parent parent4 = new Parent("specialist", null);
-        Parent parent5 = new Parent("sub-specialist", "specialist");
-        Parent parent6 = new Parent("label", null);
-        Parent parent7 = new Parent("sub-label", "label");
-        Parent parent8 = new Parent("device", "sub-label");
-        Parent parent9 = new Parent("chanel", "");
-        Parent parent10 = new Parent("sub-chanel", "chanel");
-        Parent parent11 = new Parent("sub-department", "department");
-        Parent parent12 = new Parent("sub-company", "company");
-        Parent parent13 = new Parent("task-defined", "department");
-        Parent parent14 = new Parent("role", "department");
-        Parent parent15 = new Parent("sub-role", "role");
-        Parent parent16 = new Parent("user-role", "sub-role");
-        Parent parent17 = new Parent("sub-user-role", "user-role");
-        Parent parent18 = new Parent("sub-sub-company", "sub-company");
-        Parent parent19 = new Parent("sub-sub-label", "sub-label");
-        Parent parent20 = new Parent("specialist-1", "");
-        Parent parent21 = new Parent("specialist-2", "");
-        Parent parent22 = new Parent("specialist-3", "");
-        Parent parent23 = new Parent("label-1", null);
-        Parent parent24 = new Parent("label-2", "");
-
-        parents.add(parent1);
-        parents.add(parent2);
-        parents.add(parent3);
-        parents.add(parent4);
-        parents.add(parent5);
-        parents.add(parent6);
-        parents.add(parent7);
-        parents.add(parent8);
-        parents.add(parent9);
-        parents.add(parent10);
-        parents.add(parent11);
-        parents.add(parent12);
-        parents.add(parent13);
-        parents.add(parent14);
-        parents.add(parent15);
-        parents.add(parent16);
-        parents.add(parent17);
-        parents.add(parent18);
-        parents.add(parent19);
-        parents.add(parent20);
-        parents.add(parent21);
-        parents.add(parent22);
-        parents.add(parent23);
-        parents.add(parent24);
+//        parents.add(parent1);
+//        parents.add(parent2);
+//        parents.add(parent3);
+//        parents.add(parent4);
+//        parents.add(parent5);
+//        parents.add(parent6);
+//        parents.add(parent7);
+//        parents.add(parent8);
+//        parents.add(parent9);
+//        parents.add(parent10);
+//        parents.add(parent11);
+//        parents.add(parent12);
+//        parents.add(parent13);
+//        parents.add(parent14);
+//        parents.add(parent15);
+//        parents.add(parent16);
+//        parents.add(parent17);
+//        parents.add(parent18);
+//        parents.add(parent19);
+//        parents.add(parent20);
+//        parents.add(parent21);
+//        parents.add(parent22);
+//        parents.add(parent23);
+//        parents.add(parent24);
 
         Date start = new Date();
 
@@ -110,8 +110,10 @@ public class ReadJava {
 
     }
 
+    int counter = 0;
 
     public void fixFindParent(List<Parent> parentList) {
+
         List<Parent> parentNull = parentList.stream()
                 .filter(r -> r.getParent() == null || r.getParent().equals(""))
                 .collect(Collectors.toList());
@@ -122,6 +124,8 @@ public class ReadJava {
 
         for (int j = 0; j < parents.size(); j++) {
             for (int i = 0; i < parentNull.size(); i++) {
+
+                ++ counter;
 
                 Parent p = parents.get(j);
 
@@ -287,8 +291,6 @@ class Parent {
 
     private String value;
 
-    private Parent child;
-
     public Parent(String name) {
         this.name = name;
     }
@@ -296,12 +298,6 @@ class Parent {
     public Parent(String name, String parent) {
         this.parent = parent;
         this.name = name;
-    }
-
-    public Parent(String parent, String name, String value) {
-        this.parent = parent;
-        this.name = name;
-        this.value = value;
     }
 
     public String getParent() {
@@ -326,14 +322,6 @@ class Parent {
 
     public void setValue(String value) {
         this.value = value;
-    }
-
-    public Parent getChild() {
-        return child;
-    }
-
-    public void setChild(Parent child) {
-        this.child = child;
     }
 
     @Override

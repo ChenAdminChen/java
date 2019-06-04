@@ -1,16 +1,12 @@
 package com.example.testkotlin.entity
 
-import org.hibernate.annotations.CacheConcurrencyStrategy
 import org.hibernate.annotations.GenericGenerator
 import org.hibernate.annotations.Parameter
-import java.io.Serializable
 import javax.persistence.*
 
 @Entity
 @Table(name = "sch_tea")
-@Cacheable
-@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-class StuTea :Serializable{
+class StuTea {
 
     var name: String? = null
 

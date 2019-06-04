@@ -1,17 +1,13 @@
 package com.example.testkotlin.repository
 
 import com.example.testkotlin.entity.*
-import org.springframework.cache.annotation.Cacheable
 import org.springframework.data.jpa.repository.JpaRepository
-import org.springframework.data.repository.PagingAndSortingRepository
 import org.springframework.data.rest.webmvc.spi.BackendIdConverter
 import org.springframework.stereotype.Component
 import java.io.Serializable
 
 interface StuTeaRepository : JpaRepository<StuTea, StuTeaKey> {
 
-//    @Cacheable(value = ["findAll"])
-//    override fun findAll(): MutableList<StuTea>
 }
 
 interface CollegeRepository : JpaRepository<College, StuTeaKey> {
@@ -26,8 +22,6 @@ interface StudentRepository : JpaRepository<Student, Int> {
 
 interface TeacherRepository : JpaRepository<Teacher, Int> {
 
-    @Cacheable()
-    override fun <S : Teacher?> save(entity: S): S
 }
 
 @Component
