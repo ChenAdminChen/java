@@ -1,0 +1,28 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+    id("org.springframework.boot")
+    id("io.spring.dependency-management")
+
+}
+
+group 'com.chen.demo'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile project(':java-demo')
+
+    implementation("org.springframework.boot:spring-boot-starter-data-rest")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
