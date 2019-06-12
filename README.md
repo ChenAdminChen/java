@@ -64,4 +64,10 @@
     1. permission-annotation java自定义注解
     2. annotation-demo 注解使用方
    这两个模块主要将annotation-demo中原有的自定义注解，改成新的注解，其注解中的内容不变
-    
+## gadle-dependency
+  1. gradle 5.4.1 project
+  2. has three child gradle project
+  3. use kotlin and java(lombok)
+  4. two or more chile project dependency
+  2019.06.12 perfect
+
