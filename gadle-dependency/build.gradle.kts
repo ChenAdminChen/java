@@ -15,26 +15,6 @@ repositories {
     mavenCentral()
 }
 
-//https://docs.gradle.org/current/userguide/declaring_dependencies.html#sec:declaring_project_dependency
-
-dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-rest")
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-
-    implementation(project("kotlin-demo"))
-    implementation(project("java-demo"))
-}
-
-//project("gadle-dependency") {
-//    dependencies {
-//        "implementation"(project(":kotlin-demo"))
-//        "implementation"(project(":java-demo"))
-//    }
-//}
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
@@ -42,3 +22,30 @@ tasks.withType<KotlinCompile> {
         jvmTarget = "1.8"
     }
 }
+
+
+allprojects {
+    tasks.register("hello") {
+        doLast {
+            println("I'm ${this.project.name}")
+        }
+    }
+}
+
+//subprojects {
+//    val hello by tasks.existing
+//
+////    hello {
+////        doLast { println("- I depend on kotlin-demo") }
+////    }
+//
+//    afterEvaluate {
+//        if (extra["arctic"] as Boolean) {
+//            hello {
+//                doLast {
+//                    println("- this is gradle-dependency doLast.")
+//                }
+//            }
+//        }
+//    }
+//}
