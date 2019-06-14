@@ -71,6 +71,6 @@
   4. two or more chile project dependency
   2019.06.12 perfect
 ## mybatis-test
-  1. use test mybatis mapper
-  [learn adress](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-test-autoconfigure/)
-  2019.06.14 perfect
+  1. use test mybatis mapper  
+  [learn adress](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-test-autoconfigure/)  
+  2019.06.14 perfect  
