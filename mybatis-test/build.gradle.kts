@@ -29,6 +29,8 @@ dependencies {
 
     testCompile("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.0.1")
 
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    
 }
 
 tasks.withType<KotlinCompile> {

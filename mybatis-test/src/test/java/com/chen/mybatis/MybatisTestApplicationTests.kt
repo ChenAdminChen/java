@@ -31,7 +31,7 @@ class MybatisTestApplicationTests {
         var users = userMapper.getUser()
 
     }
-    
+
     @Test
     fun update() {
         var u = User()
