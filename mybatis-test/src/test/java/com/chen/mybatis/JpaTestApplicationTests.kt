@@ -49,5 +49,18 @@ class JpaTestApplicationTests {
         print(users.toString())
     }
 
+    @Test
+    fun add(){
+        var u = UserJpa()
+        u.email = "123456789@qq.com"
+        u.username ="ffdfd"
+        u.password = "erer"
 
+        userRepository.save(u)
+
+        var user = userRepository.findById(u.id!!)
+        print(user.toString())
+
+
+    }
 }

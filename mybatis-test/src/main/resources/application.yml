@@ -3,8 +3,9 @@ spring:
     url: jdbc:mysql://localhost:3306/oauth2?CharacterEncoding=utf-8
     username: root
     password: as1996
-    driver-class-name: com.mysql.jdbc.Driver
-
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
 #mybatis:
 #  mapper-locations: classpath:/mapper/*.xml
 

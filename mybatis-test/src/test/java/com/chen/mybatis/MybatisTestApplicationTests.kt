@@ -44,4 +44,17 @@ class MybatisTestApplicationTests {
     }
 
 
+    @Test
+    fun add() {
+        var u = User()
+        u.email = "123456789@qq.com"
+        u.password = "password"
+        u.username = "fdfdf"
+        userMapper.addUser(u)
+
+        userMapper.addUser(u)
+        var users = userMapper.getUserById(u.id!!)
+
+        print(users.toString())
+    }
 }

@@ -9,7 +9,8 @@ interface UserMapper {
 //    var password: String? = null
 //    var username: String? = null
 //    var email: String? = null
-    @Insert("insert into(username,email,password) user values(#{username},#{email},#{password})")
+    @Insert("insert into user(username,email,password) values(#{username},#{email},#{password})")
+    @Options(useGeneratedKeys = true,keyProperty = "id")
     fun addUser(user: User): Int
 
     @Select("select * from  user")
