@@ -9,15 +9,15 @@ interface UserMapper {
 //    var password: String? = null
 //    var username: String? = null
 //    var email: String? = null
-    @Insert("insert into user(username,email,password) values(#{username},#{email},#{password})")
-    @Options(useGeneratedKeys = true,keyProperty = "id")
+    @Insert("insert into user(username,email,password,disabled) values(#{username},#{email},#{password},#{disabled})")
+    @Options(useGeneratedKeys = true, keyProperty = "id")
     fun addUser(user: User): Int
 
     @Select("select * from  user")
     fun getUser(): List<User>
 
     @Select("select * from  user where id =#{id}")
-    fun getUserById(id: Int): User
+    fun getUserById(id: Int): User?
 
     @Delete("delete from user where id = #{id}")
     fun deleteUser(id: Int): Int

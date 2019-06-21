@@ -60,7 +60,5 @@ class JpaTestApplicationTests {
 
         var user = userRepository.findById(u.id!!)
         print(user.toString())
-
-
     }
 }

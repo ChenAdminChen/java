@@ -24,11 +24,11 @@ dependencies {
 
     implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.0.1")
     runtimeOnly("mysql:mysql-connector-java")
-
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-
+    
     testCompile("org.mybatis.spring.boot:mybatis-spring-boot-starter-test:2.0.1")
 
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
+    
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     
 }

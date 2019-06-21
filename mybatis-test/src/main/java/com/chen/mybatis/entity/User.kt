@@ -5,4 +5,6 @@ class User {
     var password: String? = null
     var username: String? = null
     var email: String? = null
+    var disabled: Boolean = false
+
 }

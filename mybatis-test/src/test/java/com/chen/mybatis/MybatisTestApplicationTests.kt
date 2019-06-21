@@ -12,7 +12,9 @@ import org.springframework.test.context.junit4.SpringRunner
 @RunWith(SpringRunner::class)
 //@SpringBootTest
 @MybatisTest
+
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+
 class MybatisTestApplicationTests {
 
     @Autowired
@@ -22,25 +24,43 @@ class MybatisTestApplicationTests {
     fun contextLoads() {
 
         var users = userMapper.getUser()
-
+        assert(users.size == 4)
     }
 
     @Test
     fun delete() {
-        userMapper.deleteUser(3)
-        var users = userMapper.getUser()
+        var result = userMapper.deleteUser(3)
+
+        assert(result > 0)
+
+        assert(userMapper.getUserById(3) == null)
 
     }
+
+    @Test
+    fun deleteById() {
+
+
+        var result = userMapper.deleteUser(8)
+
+        assert(result == 0)
+
+    }
+
 
     @Test
     fun update() {
         var u = User()
         u.email = "123456789@qq.com"
         u.id = 3
-        userMapper.updateUser(u)
+        var result = userMapper.updateUser(u)
 
         var users = userMapper.getUserById(3)
-        print(users.toString())
+
+        assert(users != null)
+
+        assert(users?.email.equals(u.email))
+
     }
 
 
@@ -50,11 +70,18 @@ class MybatisTestApplicationTests {
         u.email = "123456789@qq.com"
         u.password = "password"
         u.username = "fdfdf"
-        userMapper.addUser(u)
 
-        userMapper.addUser(u)
+        var result = userMapper.addUser(u)
+
+        assert(result > 0)
+
+        assert(u.id != null)
+
         var users = userMapper.getUserById(u.id!!)
 
-        print(users.toString())
+        assert(users != null)
+
+        assert(users!!.disabled == false)
+
     }
 }
