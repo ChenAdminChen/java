@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.chen.demo'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    compile 'org.webjars:swagger-ui:3.22.2'
+    compile 'org.apache.cxf:cxf-rt-rs-service-description-swagger:3.3.2'
+
+    compile 'org.apache.cxf:cxf-spring-boot-starter-jaxrs:3.3.2'
+    compile 'org.apache.cxf:cxf-rt-transports-http:3.3.2'
+    compile 'org.apache.cxf:cxf-rt-rs-security-cors:3.2.5'
+
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.7'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.7'
+    compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.9.7'
+    compile 'org.codehaus.jackson:jackson-jaxrs:1.9.13'
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+}

@@ -1,0 +1,7 @@
+cxf:
+  jaxrs:
+    component-scan: true
+    #    classes-scan: true
+    classes-scan-packages: org.apache.cxf.jaxrs.swagger,org.apache.cxf.metrics
+  #    classes-scan-packages: org.apache.cxf.jaxrs.swagger #com.yf.af.biz.service,com.fasterxml.jackson.jaxrs.json
+  path: /
