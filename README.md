@@ -75,3 +75,9 @@
   2. use test jpa
   [learn adress](http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-test-autoconfigure/)  
   2019.06.15 perfect  
+## spring-boot-cxf-swagger
+  1. user cxf service
+  2. use swagger document
+  3. use swagger-ui
+  [learn address](http://cxf.apache.org/docs/swagger2feature.html)
+  [project address](https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jax_rs/spring_boot_scan)
