@@ -1,0 +1,5 @@
+[INFO ] 2019-07-23 17:12:17.192 [main] SpringBootLoggerApplicationKt - Starting SpringBootLoggerApplicationKt on chen-YangTianT4900c-00 with PID 29011 (/home/chen/work/bolg_code/java/spring-boot-logger/out/production/classes started by chen in /home/chen/work/bolg_code/java/spring-boot-logger)
+[DEBUG] 2019-07-23 17:12:17.208 [main] SpringBootLoggerApplicationKt - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+[INFO ] 2019-07-23 17:12:17.211 [main] SpringBootLoggerApplicationKt - No active profile set, falling back to default profiles: default
+[INFO ] 2019-07-23 17:12:18.377 [main] SpringBootLoggerApplicationKt - Started SpringBootLoggerApplicationKt in 1.801 seconds (JVM running for 2.986)
+[DEBUG] 2019-07-23 17:13:01.679 [http-nio-8080-exec-1] TestController - success----------------
