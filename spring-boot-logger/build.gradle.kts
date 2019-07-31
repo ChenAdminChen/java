@@ -21,9 +21,9 @@ dependencies {
 
     implementation("org.springframework.boot:spring-boot-starter-web")
 
-
-    implementation("org.springframework.boot:spring-boot-starter-log4j2")
-    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.9")
+//
+//    implementation("org.springframework.boot:spring-boot-starter-log4j2")
+//    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.9")
 
     implementation("com.lmax:disruptor:3.4.2")
 
@@ -37,11 +37,11 @@ dependencies {
 }
 
 //排除掉spring-boot 自带的logging
-configurations {
-    all {
-        exclude("org.springframework.boot", "spring-boot-starter-logging")
-    }
-}
+//configurations {
+//    all {
+//        exclude("org.springframework.boot", "spring-boot-starter-logging")
+//    }
+//}
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {

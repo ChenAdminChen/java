@@ -154,3 +154,43 @@ public class TestController{
         }
 }
 ```
+
+# spring boot logger
+
+spring boot web 的包内有日志的引用
+因此不需要有其它的引用
+
+> 配置日志输出到文件  
+```gradle
+logging.file=myapplication.log
+
+```
+
+> 代码使用  
+```kotlin
+
+package com.chen.demo
+
+import com.chen.demo.controller.TestController
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
+import java.lang.RuntimeException
+
+@SpringBootApplication
+class SpringBootLoggerApplication {
+
+}
+
+fun main(args: Array<String>) {
+    val log: Logger = LogManager.getLogger(SpringBootLoggerApplication::class.java)
+
+    log.debug(RuntimeException("successs-----------------------").toString())
+
+    runApplication<SpringBootLoggerApplication>(*args)
+}
+
+```
+
+
