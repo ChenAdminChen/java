@@ -1,0 +1,11 @@
+spring:
+  cache:
+#    cache-names: users
+#    jcache:
+#      config: classpath:another-config.xml
+    jcache:
+      config: classpath:/ehcache.xml
+
+#logging:
+#  level:
+#    root: debug
