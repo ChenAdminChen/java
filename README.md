@@ -87,3 +87,8 @@
   2. use jcache
       xml configuration implement
   
+## spring-boot redis keyspace notifications
+  1. use redis keyspace notification
+  2. spring-boot 
+  3. java + kotlin
+  4. gradle
