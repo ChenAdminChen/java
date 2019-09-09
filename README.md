@@ -81,3 +81,9 @@
   3. use swagger-ui
   [learn address](http://cxf.apache.org/docs/swagger2feature.html)
   [project address](https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jax_rs/spring_boot_scan)
+## spring-jcache
+  1. use ehcache
+      java code implement
+  2. use jcache
+      xml configuration implement
+  
