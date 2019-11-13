@@ -1,0 +1,8 @@
+server:
+  port: 8881
+
+hbase:
+  zookeeper:
+    quorum: ip-127.0.0.1
+  property:
+      clientPort: 2181
