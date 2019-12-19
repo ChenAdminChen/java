@@ -51,6 +51,6 @@ http://localhost:8601/api-docs/?uri=/swagger.json
 
 # 进入页面后输入需要访问的swagger.json地址
 
-/swagger.json
+http://localhost:8601/swagger.json
 
 ```

@@ -37,7 +37,8 @@ setting -> Build Execution Deployment -> compiler -> annotation processor -> Ena
 
 > spring-boot project provider jar 
 
-solve bootRun and jar meanwhile, at build.gradle.kts add configuration
+solve bootRun and jar meanwhile, at build.gradle.kts add configuration  
+[学习地址](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/)
 
 ```kotlin
 //jar is true

@@ -54,6 +54,4 @@ public class HBaseMapper {
 //        设置读取到内存的条数
         return scan;
     }
-
-
 }
