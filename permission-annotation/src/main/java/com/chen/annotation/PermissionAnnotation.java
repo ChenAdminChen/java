@@ -12,6 +12,7 @@ import javax.lang.model.element.*;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.stream.Collectors;
 
 import static java.util.regex.Pattern.compile;
 
@@ -101,11 +102,12 @@ public class PermissionAnnotation extends AbstractProcessor {
 
             modules.put(e.getSimpleName().toString(), module);
 
-            if (parent.equals("")) {
-                parent = null;
+            Parent parent1 = new Parent(id);
+
+            if (!parent.equals("") && parent != null) {
+                parent1.setParent(parent);
             }
 
-            Parent parent1 = new Parent(id, parent);
             parents.add(parent1);
 
         }
@@ -113,9 +115,10 @@ public class PermissionAnnotation extends AbstractProcessor {
         //handle module has parent...
         //parent information storage value
         if (parents.size() > 0) {
-            for (int i = 0; i < parents.size(); i++) {
-                findParent(parents, parents.get(i));
-            }
+//            for (int i = 0; i < parents.size(); i++) {
+//                findParent(parents, parents.get(i));
+//            }
+            fixFindParent(parents);
         }
 
         modules.forEach((key, it) -> {
@@ -167,6 +170,45 @@ public class PermissionAnnotation extends AbstractProcessor {
 
 
         return true;
+
+    }
+
+    public void fixFindParent(List<Parent> parentList) {
+        List<Parent> parentNull = parentList.stream()
+                .filter(r -> r.getParent() == null || r.getParent().equals(""))
+                .collect(Collectors.toList());
+
+
+        List<Parent> parents = parentList.stream()
+                .filter(r -> r.getParent() != null && !r.getParent().equals(""))
+                .collect(Collectors.toList());
+
+        for (int j = 0; j < parents.size(); j++) {
+            for (int i = 0; i < parentNull.size(); i++) {
+
+                Parent p = parents.get(j);
+
+                Parent c = parentNull.get(i);
+
+                if (p.getParent().equals(c.getName())) {
+                    if (c.getValue() == null)
+                        c.setValue(c.getName());
+
+                    p.setValue(c.getValue() + "." + p.getName());
+
+                    p.setParent(null);
+                    break;
+                }
+            }
+        }
+
+        parents = parentList.stream().filter(r -> r.getParent() != null && !r.getParent().equals("")).collect(Collectors.toList());
+
+        if (parents.size() > 0)
+            fixFindParent(parentList);
+        else
+            return;
+
 
     }
 
@@ -399,8 +441,8 @@ class Parent {
     public Parent() {
     }
 
-    public Parent(String name, String parent) {
-        this.parent = parent;
+
+    public Parent(String name) {
         this.name = name;
     }
 

@@ -23,7 +23,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.chen.annotation'
             artifactId = 'permission-annotation'
-            version = '11.18-SNAPSHOT'
+            version = '11.24-SNAPSHOT'
 
 //            如果是war包填写components.web，如果是jar包填写components.java
             from components.java
