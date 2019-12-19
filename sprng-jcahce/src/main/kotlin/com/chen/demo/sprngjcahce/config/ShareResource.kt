@@ -13,20 +13,7 @@ import org.springframework.context.annotation.Configuration
 import java.util.concurrent.TimeUnit
 
 
-@Configuration
-@EnableCaching
-class CachingConfig {
-    @Bean
-    fun cacheManager(): CacheManager {
-        return ConcurrentMapCacheManager("user")
-    }
-
-
-}
-
 object ShareResource {
-
-    var sessions = HashMap<Int, RoleAccessControl>()
 
     // 短信有效时间，单位分
     val expireTime: Long = 5
@@ -42,20 +29,4 @@ object ShareResource {
 
     val myCache = cacheManager.createCache("myCache", cacheConfiguration)
 
-    /**
-     * get access control from cache
-     *     get access control from database and store it in cache if it's not exist
-     *
-     * WARNING: will not update access control
-     */
-//    fun getAccessControl(id: Int): RoleAccessControl? {
-//        var accessControl: RoleAccessControl? = sessions[id]
-//        if (accessControl == null) {
-//            accessControl = AccessManagement.getInstance().getAccessControl(id)
-//            if (accessControl != null)
-//                sessions[id] = accessControl
-//        }
-//
-//        return accessControl
-//    }
 }
