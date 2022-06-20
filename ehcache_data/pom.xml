@@ -154,7 +154,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>provided</scope>
-            <version>5.1.34</version>
+            <version>8.0.28</version>
         </dependency>
 
         <!-- dbcp2 -->
